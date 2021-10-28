@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="card" *ngFor="let item of userList">
+        <div class="image">
+            <img src="{{item.avatar}}" alt="User image">
+        </div>
+        <p class="name">{{item.first_name}} {{item.last_name}}</p>
+    </div>
+</div>
+<div>
+    <a class="button" (click)="giveMore(actualPage-1)">BACK</a>
+    <a class="button" (click)="giveMore(actualPage+1)">NEXT</a>
+</div>

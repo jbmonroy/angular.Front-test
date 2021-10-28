@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="logo">
+        <h2>JBM</h2>
+    </div>
+    <div class="nav">
+        <nav class="main-nav">
+            <ul class="main-ul">
+                <li class="main-li" *ngFor="let item of mainMenu.accessLink"><a [routerLink]="[item.route]" routerLinkActive="active">{{item.name}}</a></li>
+                <li class="main-li" *ngFor="let item of mainMenu.closeSession"><a class="closeSession" (click)="item.click()">{{item.name}}</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

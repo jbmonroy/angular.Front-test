@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="settings">
+        <label for="background">Background color</label>
+        <input type="text" name="backgroundColor" [(ngModel)]="backgroundColor" placeholder="Type a Background-color code">
+        <label for="color">Font color</label>
+        <input type="text" name="color" [(ngModel)]="color" placeholder="Type a Font-color code">
+        <label for="contain">Text</label>
+        <input type="text" name="contain" [(ngModel)]="contain" placeholder="Type some text">
+    </div>
+    <p class="" [style.background]="backgroundColor" [style.color]="color">{{contain}}</p>
+</div>

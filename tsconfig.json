@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +17,17 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      "@modules/*":[
+        "src/app/modules/*"
+      ],
+      "@shared/*":[
+        "src/app/shered/*"
+      ],
+      "@core/*":[
+        "src/app/core/*"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"

@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    padding: .4em;
+}
+.settings label{
+    margin-top: .9em;
+}
+.settings input{
+    margin-top: .6em;
+    max-width: 20em;
+    padding: .3em;
+    border-radius: 5px;
+    border: 1px solid var(--color-h3);
+}
+p{
+    height: 10em;
+    padding: 2em;
+}

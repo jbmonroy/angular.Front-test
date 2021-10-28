@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Dataset from the API reqres.in</h2>
+    <div class="row titles">
+        <ul>
+            <li class="cell title id">id</li>
+            <li class="cell title name">full name</li>
+            <li class="cell title email">email</li>
+        </ul>
+    </div>
+    <div class="row" *ngFor="let item of userList">
+        <ul>
+            <li class="cell id">{{item.id}}</li>
+            <li class="cell name">{{item.last_name}} {{item.first_name}}</li>
+            <li class="cell email">{{item.email}}</li>
+        </ul>
+    </div>
+    <a class="button" (click)="giveMore(actualPage-1)">BACK</a>
+    <a class="button" (click)="giveMore(actualPage+1)">NEXT</a>
+</div>
